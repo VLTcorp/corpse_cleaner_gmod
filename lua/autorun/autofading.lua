@@ -19,7 +19,7 @@ if SERVER then
     end)
 
     hook.Add("CreateEntityRagdoll", "clean_corpses_vlt" , function (owner,ragdoll)        
-        if (  IsValid(ragdoll:GetOwner()) or npcverrif:GetBool() ) then
+        if npcverrif:GetBool() then
             if kolizion:GetBool() then
                 ragdoll:SetCollisionGroup(COLLISION_GROUP_WEAPON)
             end
