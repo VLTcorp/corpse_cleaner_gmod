@@ -1,0 +1,11 @@
+{
+	"title"		:	"corpse_cleaner",
+	"type"		:	"tool",
+	"tags"		:	[ "roleplay"],
+	"ignore"	:
+	[
+		"*.psd",
+		"*.vcproj",
+		"*.svn*"
+	]
+}
