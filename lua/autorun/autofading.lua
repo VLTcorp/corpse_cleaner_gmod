@@ -30,18 +30,14 @@ if SERVER then
     end)
 
 else --code du consomateur
-   
-    
     hook.Add( "PopulateToolMenu", "CustomMenuSettings", function()
         spawnmenu.AddToolMenuOption( "Options", "Corpse Cleaner", "settings", "Corpse Cleaner", "", "", function( panel )
             panel:ClearControls()
-            panel:CheckBox("auto fading",autofading:GetName() )
-            panel:NumSlider( "Fading time", autofadingdur:GetName() , 0, 900 )
-            panel:CheckBox("corpse no collide",kolizion:GetName() )
-            panel:CheckBox("apply for all ragdolls",npcverrif:GetName())      
+            panel:CheckBox("Auto fading",autofading:GetName() )
+            panel:NumSlider("Fading time", autofadingdur:GetName() , 0, 900 )
+            panel:CheckBox("Corpse no collide",kolizion:GetName() )
+            panel:CheckBox("Apply for all ragdolls",npcverrif:GetName())      
         end )
     end )
-
-
+    
 end
-
